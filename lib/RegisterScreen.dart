@@ -54,9 +54,9 @@ class RegisterScreen extends StatelessWidget {
                 RotatedBox(
                   //angle: 180 * (22 / 7) / 180,
                   quarterTurns: 2,
-                  child: Container(child: buildAbovecontainer(context)),
+                  child: Container(child: buildTopcontainer(context)),
                 ),
-                Container(height: 220, child: buildUndercontainer()),
+                Container(height: 220, child: buildBottomcontainer()),
                 const SizedBox(
                   height: 17,
                 ),
@@ -68,7 +68,7 @@ class RegisterScreen extends StatelessWidget {
     );
   }
 
-  Widget buildAbovecontainer(context) => ClipPath(
+  Widget buildTopcontainer(context) => ClipPath(
         //RoundedDiagonalPathClipper()
         clipper: roundedDiagonalPathClipper(),
         child: Container(
@@ -178,7 +178,7 @@ class RegisterScreen extends StatelessWidget {
           ),
         ),
       );
-  Widget buildUndercontainer() => ClipPath(
+  Widget buildBottomcontainer() => ClipPath(
         //RoundedDiagonalPathClipper()
         clipper: roundedDiagonalPathClipper(),
         child: Container(
