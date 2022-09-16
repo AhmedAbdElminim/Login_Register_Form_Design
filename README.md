@@ -7,7 +7,7 @@
 <table>
   <tr>
     <td>Login Screen</td>
-     <td>Register Screen Screen</td>
+     <td>Register Screen</td>
      
   </tr>
   <tr>
